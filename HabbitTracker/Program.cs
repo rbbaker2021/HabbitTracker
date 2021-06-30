@@ -16,7 +16,9 @@ namespace HabbitTracker
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HabbitTracker());
+            HabbitTrackerForm habbitTracker = new HabbitTrackerForm();
+            Application.Run(habbitTracker);
+            habbitTracker.StoreSessionInfo();
         }
     }
 }
